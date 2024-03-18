@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sample Table Using DOM</title>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<h1>Sample Table Using DOM</h1>
+
+<div id="tableContainer"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Create sample data
+    var data = [
+        { name: "John Doe", age: 30, city: "New York" },
+        { name: "Jane Smith", age: 25, city: "Los Angeles" },
+        { name: "Alice Johnson", age: 35, city: "Chicago" }
+    ];
+
+    // Create table element
+    var table = document.createElement("table");
+
+    // Create table header row
+    var headerRow = table.insertRow();
+    Object.keys(data[0]).forEach(function(key) {
+        var th = document.createElement("th");
+        th.textContent = key.charAt(0).toUpperCase() + key.slice(1);
+        headerRow.appendChild(th);
+    });
+
+    // Create table rows and cells
+    data.forEach(function(item) {
+        var row = table.insertRow();
+        Object.values(item).forEach(function(value) {
+            var cell = row.insertCell();
+            cell.textContent = value;
+        });
+    });
+
+    // Append table to the container
+    document.getElementById("tableContainer").appendChild(table);
+});
+</script>
+
+</body>
+</html>

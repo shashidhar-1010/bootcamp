@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Details Form</title>
+<script>
+function calculateSalary() {
+    var name = document.getElementById("name").value;
+    var empId = document.getElementById("empid").value;
+    var hoursWorked = parseFloat(document.getElementById("hoursworked").value);
+    var designation = document.getElementById("designation").value;
+    var salary;
+
+    switch(designation) {
+        case "manager":
+            salary = hoursWorked * 90;
+            break;
+        case "consultant":
+            salary = hoursWorked * 60;
+            break;
+        case "trainee":
+            salary = hoursWorked * 40;
+            break;
+        default:
+            salary = "Invalid designation";
+    }
+
+    var employee = {
+        name: name,
+        empId: empId,
+        hoursWorked: hoursWorked,
+        designation: designation,
+        salary: salary
+    };
+
+    console.log(employee); 
+
+    alert("Employee details saved!\nName: " + name + "\nEmployee ID: " + empId + "\nSalary: $" + salary.toFixed(2));
+}
+</script>
+</head>
+<body>
+
+<h1>Employee Details Form</h1>
+
+<form>
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
+  
+  <label for="empid">Employee ID:</label><br>
+  <input type="text" id="empid" name="empid" required><br><br>
+  
+  <label for="hoursworked">Hours Worked:</label><br>
+  <input type="number" id="hoursworked" name="hoursworked" min="0" required><br><br>
+  
+  <label for="designation">Designation:</label><br>
+  <select id="designation" name="designation" required>
+    <option value="manager">Manager</option>
+    <option value="consultant">Consultant</option>
+    <option value="trainee">Trainee</option>
+  </select><br><br>
+  
+  <button type="button" onclick="calculateSalary()">Submit</button>
+</form>
+
+</body>
+</html>
