@@ -1,0 +1,6 @@
+FROM openjdk
+LABEL maintainer = "abcdef@mail.com"
+EXPOSE 8080
+WORKDIR /app
+COPY target/test-demo.jar /app/test-demo.jar
+ENTRYPOINT ["java","-jar","test-demo.jar"]
