@@ -1,0 +1,10 @@
+{"@timestamp":"2024-02-26T10:56:53.0332013+05:30","level":"INFO","message":"This is an info message..."}
+{"@timestamp":"2024-02-26T10:56:53.0499675+05:30","level":"DEBUG","message":"Received request from 122.33.22.1"}
+{"@timestamp":"2024-02-26T10:56:53.0499675+05:30","level":"TRACE","message":"ENtering main method"}
+{"@timestamp":"2024-02-26T10:56:53.0499675+05:30","level":"WARN","message":"Connection refused. Retrying...."}
+{"@timestamp":"2024-02-26T10:56:53.0499675+05:30","level":"ERROR","message":"Failed to Execute"}
+{"@timestamp":"2024-02-26T10:56:53.0509689+05:30","level":"INFO","message":"Emp with 123 in PS got a new share in the share market"}
+{"@timestamp":"2024-02-26T10:56:53.0519709+05:30","level":"INFO","message":"This is an info message..."}
+{"@timestamp":"2024-02-26T10:56:53.0537929+05:30","level":"DEBUG","message":"Received request from 122.33.22.1"}
+{"@timestamp":"2024-02-26T10:56:53.0537929+05:30","level":"WARN","message":"Connection refused. Retrying...."}
+{"@timestamp":"2024-02-26T10:56:53.0537929+05:30","level":"ERROR","message":"Failed to Execute"}

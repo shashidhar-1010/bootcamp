@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <context:annotation-config/>
+<!--    once we are using config no need of autowire also anotate the car in person with autowired-->
+<!--    <bean id ="person" class="org.example.Person" scope="prototype"autowire="byName">-->
+<!--    <bean id ="person" class="org.example.Person" scope="prototype"autowire="byType">-->
+
+    <bean id ="person" class="org.example.Person" scope="prototype">
+        <!--<property name="firstname" value="rahul"/>-->
+        <constructor-arg value="22" type="int"/>
+        <constructor-arg value="Tarun" type="String"/>
+        <constructor-arg value="Reddy" type="String"/>
+<!--        <property name="car" ref="car"/>-->
+
+
+    </bean>
+<!--    <bean id="car" class="org.example.Car" scope="prototype">-->
+<!--if we use byType we can use any id here insted of car we can use mycar also still the output will be same-->
+<!--    if we are using byName we should use the same id ie car which is also in the person method variable private Car car-->
+    <bean id="car" class="org.example.Car" scope="prototype">
+        <property name="make" value="honda"/>
+        <property name="model" value="city"/>
+        <property name="year" value="2000"/>
+    </bean>
+</beans>

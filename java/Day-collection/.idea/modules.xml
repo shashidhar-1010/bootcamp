@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Day-collection.iml" filepath="$PROJECT_DIR$/.idea/Day-collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-allocation/java-allocation.iml" filepath="$PROJECT_DIR$/java-allocation/java-allocation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-c1/java-c1.iml" filepath="$PROJECT_DIR$/java-c1/java-c1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-c2/java-c2.iml" filepath="$PROJECT_DIR$/java-c2/java-c2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-c3/java-c3.iml" filepath="$PROJECT_DIR$/java-c3/java-c3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-io/java-io.iml" filepath="$PROJECT_DIR$/java-io/java-io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-map/java-map.iml" filepath="$PROJECT_DIR$/java-map/java-map.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-prop/java-prop.iml" filepath="$PROJECT_DIR$/java-prop/java-prop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-serial/java-serial.iml" filepath="$PROJECT_DIR$/java-serial/java-serial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-stream1/java-stream1.iml" filepath="$PROJECT_DIR$/java-stream1/java-stream1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-streams/java-streams.iml" filepath="$PROJECT_DIR$/java-streams/java-streams.iml" />
+    </modules>
+  </component>
+</project>
